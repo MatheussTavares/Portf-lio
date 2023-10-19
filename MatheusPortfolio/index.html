@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Matheus Tavares - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="contenedor-header">
+        <header id="header">
+            <div class="logo">
+                <a href="#">MatheusTavares</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Início</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mim</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculo</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+        <div id="barra"></div>
+    </div>
+
+
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
+
+        </div>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/theus.png" alt="">
+            </div>
+            <h1>MatheusTavares</h1>
+            <h2>Desenvolvedor Full Stack</h2>
+            <div class="redes">
+                <a href="https://github.com/MatheussTavares"><i class="fa-brands fa-github"></i></a>
+
+                <a href="https://www.linkedin.com/in/matheus-tavares1812/"><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mim</h2>
+            <p>Olá, me chamo <span>Matheus Tavares</span> Sou um jovem desenvolvedor web, graduado na Etec Adolpho
+                Berezin, onde concluí o ensino médio com habilitação técnica em Desenvolvimento de Sistemas. Durante
+                minha formação, adquiri diversas competências técnicas e profissionais que me prepararam para atuar com
+                excelência na área.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Dados Pessoais</h3>
+                    <ul>
+                        <li>
+                            <strong>Aniversário</strong>
+                            18-12-2004
+                        </li>
+                        <li>
+                            <strong>Telefone</strong>
+                            (13) 99185-6663
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            contatomatheustavaress@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.matheustavares.com
+                        </li>
+                        <li>
+                            <strong>Nacionalidade</strong>
+                            Brasil / Brazil
+                        </li>
+                        <li>
+                            <strong>Trabalho Atual</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Eu Amo</h3>
+                    <div class="contenedor-intereses">
+
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>Programar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Design</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Ler</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-soccer-ball"></i>
+                            <span>Futebol</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>Hardware</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Carros</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Games</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="downloadButton" onclick="downloadArquivo()">
+                Baixar Curriculo <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+
+
+                    <div class="skill">
+                        <span>Javascript & React.JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>php & MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Shopify</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PhotoShop & Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profissionais</h3>
+                    <div class="skill">
+                        <span>Comunicação</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabalho em Equipe</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proatividade</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicação</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>
+                            Criatividade</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculo</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Formação Acadêmica</h3>
+                    <div class="item izq">
+                        <h4>Escola Técnica (Etec Adolpho Berezin)</h4>
+                        <span class="casa"></span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>Ensino médio com habilitação técnica em desenvolvimento de sistemas, onde obtive competências
+                            tais como as citadas acima, através de projetos extracurriculares, Trabalho de Conclusão de
+                            Curso (TCC), Projeto Hackaton (Proposta de entrega de documentação, web-design e aplicação
+                            web em 3 dias), Grêmio estudantil da escola, dentre muitos outros projetos realizados ao
+                            longo dos 3 anos em diveras linguagens de programação. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bacharelado UNINTER</h4>
+                        <span class="casa"></span>
+                        <span class="fecha">2023 - 2025</span>
+                        <p>Estou atualmente cursando o Bacharelado em Análise e Desenvolvimento de Sistemas, com o
+                            objetivo de aprimorar minhas habilidades técnicas existentes e adquirir novas competências
+                            na área </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso Udemy </h4>
+                        <span class="casa"></span>
+                        <span class="fecha" style="font-weight: 600;">Javascript e TypeScript - front-end e back-end
+                            (Full Stack) - Node, Express, noSQL, React, hooks, Redux, Design Patterns</span>
+                        <p>Conclui o Curso da Udemy, onde obtive muitas habilidades tanto back-end quando front-end
+                            principalmente em JS, Node.js e React.js </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiências </h3>
+                    <div class="item der">
+                        <h4>Web-Design e Front-end</h4>
+                        <span class="casa">Trabalho de Conclusão de Curso</span>
+                        <span class="fecha"> 2022</span>
+                        <p> Durante um ano, trabalhei em estreita colaboração com minha equipe no desenvolvimento do meu
+                            Trabalho de Conclusão de Curso. Nesse período, adquiri e aprimorei competências em áreas
+                            como web design, design, desenvolvimento front-end, trabalho em equipe e elaboração de
+                            documentos e relatórios.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Criação de Lojas</h4>
+                        <span class="casa">Shopify</span>
+                        <span class="fecha">2023</span>
+                        <p>Ao analisar o mercado digital e o crescente modelo de vendas 'dropshipping', identifiquei uma
+                            oportunidade para aplicar minhas habilidades e contribuir para esse setor. Através da
+                            plataforma Shopify, desenvolvi lojas online e atendi diversos clientes. Durante essa
+                            jornada, obtive sucesso na criação de belas e funcionais lojas, aprimorando minhas
+                            habilidades em design, web design, suporte ao cliente e marketing digital, ao mesmo tempo em
+                            que conquistei a satisfação de todos os envolvidos</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Design</h4>
+                        <span class="casa">Freelancer</span>
+                        <span class="fecha">2023</span>
+                        <p>Atualmente, trabalho em projetos freelancers, onde aplico minhas habilidades no
+                            desenvolvimento de cardápios, cartazes, banners e artes para redes sociais, entre outras
+                            criações. Graças à qualidade do meu trabalho, conquistei uma base de clientes fiéis e
+                            satisfeitos</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/1.png" alt="">
+                    <div class="overlay">
+                        <h3>SUPER MAARIO JS</h3>
+                        <p>Mini jogo em Javascript do cômico Super Mario</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/2.png" alt="">
+                    <div class="overlay">
+                        <h3>FIFA API</h3>
+                        <p>API que entrega diversas Informações sobre jogadores do fifa</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/3.png" alt="">
+                    <div class="overlay">
+                        <h3>ÓRION</h3>
+                        <p>Trabalho de Conclusão de Curso realizado durante o ensino técnico em Desenvolvimento de Sistemas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/4.png" alt="">
+                    <div class="overlay">
+                        <h3>TÁ NA MÃO</h3>
+                        <p>Projeto de Loja Virtual </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/6.png" alt="">
+                    <div class="overlay">
+                        <h3>PROJETO</h3>
+                        <p>EM CONSTRUÇÃO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/6.png" alt="">
+                    <div class="overlay">
+                        <h3>PROJETO</h3>
+                        <p>EM CONSTRUÇÃO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTATO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Nome">
+                    <input type="text" placeholder="Assunto">
+                    <input type="text" placeholder="Proposta $">
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <button>
+                        Enviar <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/undraw_message_sent_re_q2kl.svg" alt="">
+                    <!-- <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/MatheussTavares"><i class="fa-brands fa-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/matheus-tavares1812/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p> &copy;2023 Matheus Tavares. Todos os direitos reservados. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
